@@ -1,0 +1,112 @@
+@keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+.backgroundweb {
+    background-image: url('../images/bgplasticbtul.jpg');
+    background-position: right;
+    background-size: cover;
+    flex-wrap: wrap;
+
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin-right: 100px;
+        
+}
+
+.fucku {
+    justify-content: center;
+    animation: rotate 10s linear infinite;
+}
+
+@media (max-width: 600px) {
+    .backgroundweb {
+        background-image: url('../images/bgmedia.jpg');
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fucku {
+        display: none;
+    }
+}
+
+@media (max-width: 765px) {
+    .backgroundweb {
+        background-image: url('../images/bgmedia.jpg');
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fucku {
+        display: none;
+    }
+}
+
+
+@media (max-width: 800px) {
+    .backgroundweb {
+        background-image: url('../images/bgplasticbtul.jpg');
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fucku {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .backgroundweb {
+        background-image: url('../images/bgplasticbtul.jpg');
+    }
+
+    .container {
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .image {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fucku {
+        display: none;
+    }
+}
