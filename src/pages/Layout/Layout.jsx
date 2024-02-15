@@ -14,7 +14,7 @@ const Layout = ({ children }) => {
     <div className='grid-container'>
       <Header OpenSidebar={OpenSidebar} />
           <SideBars openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
-        <div className="column has-background-white-ter is-full">
+        <div className="column has-background-white-ter is-full margin">
           <main>{children}</main>
         </div>
     </div>

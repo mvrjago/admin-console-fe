@@ -8,9 +8,24 @@ body {
   
   .icon {
     vertical-align: middle;
+    color: aquamarine;
     line-height: 1px;
     font-size: 20px;
   }
+
+  .icon-sidebar {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 20px;
+  }
+
+  .icon-logout {
+    vertical-align: middle;
+    color: rgb(244, 0, 0);
+    line-height: 1px;
+    font-size: 20px;
+  }
+  
   .icon_header {
     vertical-align: middle;
     line-height: 1px;
@@ -41,6 +56,8 @@ body {
   .header {
     grid-area: header;
     height: 60px;
+    background-color: #212121 ;
+    border-bottom: 1px solid black;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -58,10 +75,15 @@ body {
   #sidebar {
     grid-area: sidebar;
     height: 100%;
-    background-color: #263043;
+    background-color: #2f2f2f;
     overflow-y: auto;
     transition: all 0.5s;
     -webkit-transition: all 0.5s;
+  }
+
+  .fix {
+    position: fixed;
+    width: 260px;
   }
   
   .sidebar-title {
@@ -149,6 +171,27 @@ body {
   
     #sidebar {
       display: none;
+      z-index: 999 !important;
+      background-color: #2f2f2f;
+      backdrop-filter: blur(10px);
+      position: fixed;
+    }
+
+    .fix {
+      position: static;
+    }
+
+    .margin {
+      margin-top: 3.8rem;
+      min-height: 100vh;
+      background-color: #EEEDEB;
+    }
+
+    .header {
+      position: fixed;
+      background-color: #212121;
+      z-index: 99;
+      right: 0;
     }
   
     .menu-icon {
@@ -167,11 +210,7 @@ body {
       gap: 10px;
       margin-bottom: 0;
     }
-  
-    .charts {
-      grid-template-columns: 1fr;
-      margin-top: 30px;
-    }
+
   }
   
   /* Extra Small <= 576px */

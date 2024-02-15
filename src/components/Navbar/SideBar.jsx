@@ -33,6 +33,7 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
 
   return (
     <aside id="sidebar" className={openSidebarToggle ? "sidebar-responsive" : ""}>
+      <div className='fix'>
       <div className='sidebar-title'>
         <div className='sidebar-brand'>
           <img src={logoPlastic} alt="Plasticque Logo" className='image is-64x64'/>
@@ -42,28 +43,28 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
       <ul className="sidebar-list">
         <NavLink to="/dashboard">
           <li className="sidebar-list-item">
-            <BsGrid1X2Fill className="icon" /> Dashboard
+            <BsGrid1X2Fill className="icon-sidebar" /> Dashboard
           </li>
         </NavLink>
         <NavLink to="/events">
           <li className="sidebar-list-item">
-            <BsCalendarEventFill className="icon" /> Events
+            <BsCalendarEventFill className="icon-sidebar" /> Events
           </li>
         </NavLink>
         <NavLink to="/crewdesigner">
           <li className="sidebar-list-item">
-            <MdDesignServices className="icon" /> Crew Designer
+            <MdDesignServices className="icon-sidebar" /> Crew Designer
           </li>
         </NavLink>
         <NavLink to="/adsos">
           <li className="sidebar-list-item">
-            <IoShareSocial className="icon" /> Social Media
+            <IoShareSocial className="icon-sidebar" /> Social Media
           </li>
         </NavLink>
         <li className={`sidebar-list-item ${isBotSubMenuOpen ? 'has-submenu-open' : 'has-submenu'}`} onClick={toggleBotSubMenu}>
           <div className="menu-item">
             <span>
-              <FaRobot className="icon" />
+              <FaRobot className="icon-sidebar" />
             </span>
             <span className={`arrow-icon ${isBotSubMenuOpen ? 'open' : ''}`}>
               <IoIosArrowDown />
@@ -73,12 +74,12 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
           <ul className={`submenu ${isBotSubMenuOpen ? 'open' : ''}`} onClick={(e) => e.stopPropagation()}>
             <NavLink to="/bot/stats" onClick={closeBotSubMenu}>
               <li className="sidebar-list-item">
-                <IoIosStats className="icon" /> Stats
+                <IoIosStats className="icon-sidebar" /> Stats
               </li>
             </NavLink>
             <NavLink to="/bot/broadcast" onClick={closeBotSubMenu}>
               <li className="sidebar-list-item">
-                <BsBroadcast className="icon" /> Broadcast
+                <BsBroadcast className="icon-sidebar" /> Broadcast
               </li>
             </NavLink>
           </ul>
@@ -86,23 +87,25 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
         {user && user.role === "admin" && (
         <NavLink to="/users">
           <li className="sidebar-list-item">
-            <BsPeopleFill className="icon" /> User
+            <BsPeopleFill className="icon-sidebar" /> User
           </li>
         </NavLink>
         )}
         {user && user.role === "admin" && (
           <NavLink to="/client">
             <li className="sidebar-list-item">
-              <FaPeopleArrows className="icon" /> Client
+              <FaPeopleArrows className="icon-sidebar" /> Client
             </li>
           </NavLink>
         )}
+        <br/><br/><br/><br/><br/><br/><br/>
         <NavLink to="/" onClick={logout} className="logout-link">
           <li className="sidebar-list-item">
-            <IoLogOut className="icon" /> Logout
+            <IoLogOut className="icon-logout" /> Logout
           </li>
         </NavLink>
       </ul>
+      </div>
     </aside>
   );
 }
