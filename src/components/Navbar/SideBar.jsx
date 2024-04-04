@@ -82,6 +82,11 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
                 <BsBroadcast className="icon-sidebar" /> Broadcast
               </li>
             </NavLink>
+            <NavLink to="/bot/admin" onClick={closeBotSubMenu}>
+              <li className="sidebar-list-item">
+                <BsBroadcast className="icon-sidebar" /> Admin
+              </li>
+            </NavLink>
           </ul>
         </li>
         {user && user.role === "admin" && (
@@ -98,7 +103,6 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
             </li>
           </NavLink>
         )}
-        <br/><br/><br/><br/><br/><br/><br/>
         <NavLink to="/" onClick={logout} className="logout-link">
           <li className="sidebar-list-item">
             <IoLogOut className="icon-logout" /> Logout

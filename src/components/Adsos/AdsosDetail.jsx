@@ -52,7 +52,7 @@ const AdsosDetail = () => {
                 className="input"
                 value={url}
                 onChange={(e) => setUrl(e.target.value)}
-                placeholder="Canva/Discord URL"
+                placeholder="Instagram URL"
               />
             </div>
             <label className="label">Role</label>

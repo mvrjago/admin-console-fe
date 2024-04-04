@@ -4,6 +4,7 @@ import Dashboard from "./pages/Main/DashboardPage";
 import Maintanance from "./pages/Main/MaintanancePage";
 import BroadcastPage from "./pages/Bot/BroadcastPage";
 import Stats from "./pages/Bot/StatsPage";
+import AdminPage from "./pages/Bot/AdminPage";
 import User from "./pages/User/UserPage";
 import AddUser from "./pages/User/AddUserPage";
 import EditUser from "./pages/User/UserEditPage";
@@ -31,6 +32,7 @@ function App() {
           <Route path="/client" element={<Maintanance />} />
           <Route path="/bot/broadcast" element={<BroadcastPage />} />
           <Route path="/bot/stats" element={<Stats />} />
+          <Route path="/bot/admin" element={<AdminPage />} />
           <Route path="/users" element={<User />} />
           <Route path="/users/add" element={<AddUser />} />
           <Route path="/users/edit/:id" element={<EditUser />} />

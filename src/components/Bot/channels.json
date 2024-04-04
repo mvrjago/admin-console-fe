@@ -1,0 +1,72 @@
+{
+  "banChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "kickChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "timeoutChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "avatarChannels": [
+    {
+      "id": "1143534458276941875",
+      "name": "🛜・introduction",
+      "enabled": true
+    }
+  ],
+  "welcomeChannels": [
+    {
+      "id": "1195867821989707816",
+      "name": "・karuta",
+      "enabled": true
+    }
+  ],
+  "welcomeMessageChannels": [
+    {
+      "id": "1123183807445610567",
+      "name": "warlord",
+      "enabled": true
+    }
+  ],
+  "goodbyeChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "deleteMessageChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "roleLogChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ],
+  "moderatorLogChannels": [
+    {
+      "id": "1143729617262358539",
+      "name": "menyampah",
+      "enabled": true
+    }
+  ]
+}

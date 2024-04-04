@@ -61,8 +61,8 @@ const CrewDesignerList = () => {
   return (
     <div>
       <div className="table-container"></div>
-      <h1 className='title'>Content</h1>
-      <h2 className='subtitle'>List of Content</h2>
+      <h1 className='title'>Design</h1>
+      <h2 className='subtitle'>List of Design</h2>
       <Link to="/crewdesigner/add" className='button is-primary mb-2 mr-2'>Add New</Link>
       <Link to="/crewdesigner/history" className='button is-info mb-2'>History</Link>
       <div className="table-container">
